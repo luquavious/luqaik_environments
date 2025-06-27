@@ -8,7 +8,7 @@ st.title("A Visual Exploration of Inequality")
 st.markdown("How Gini coefficient, life expectancy and more range both inter-nationally and intra-nationally")
 
 ### --- Chart 1: Gini Coefficient Bar Chart --- ###
-st.subheader("Gini Coefficients by Country (2002)")
+st.subheader("Mortality inequality Gini Coefficients by Country (2002)")
 
 data = {
     "Country": [
@@ -25,10 +25,8 @@ fig1 = px.bar(
     df,
     x="Country",
     y="Gini Coefficient",
-    title="Countries ranked according to mortality inequality<br>Gini coefficients in 2002"
 )
 fig1.update_layout(
-    title_x=0.2,
     yaxis_title="Mortality Inequality Gini Coefficient (2002)",
     xaxis_title="",
     uniformtext_minsize=8,
