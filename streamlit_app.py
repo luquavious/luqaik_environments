@@ -26,12 +26,15 @@ fig1 = px.bar(
     x="Country",
     y="Gini Coefficient",
 )
+
 fig1.update_layout(
     yaxis_title="Mortality Inequality Gini Coefficient (2002)",
     xaxis_title="",
     uniformtext_minsize=8,
-    uniformtext_mode='hide'
+    uniformtext_mode='hide',
+    margin=dict(t=60)  # Reduce top margin
 )
+
 st.plotly_chart(fig1, use_container_width=True)
 
 ### --- Chart 2: Life Expectancy Line Chart --- ###
