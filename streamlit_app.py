@@ -35,7 +35,7 @@ fig1.update_layout(
 st.plotly_chart(fig1, use_container_width=True)
 
 ### --- Chart 2: Life Expectancy Line Chart --- ###
-st.subheader("Life Expectancy by Deprivation Decile (2018–2020)")
+st.subheader("Life expectancy at birth by deprivation decile (2018–2020)")
 
 life_exp_data = {
     "Decile": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"],
@@ -53,7 +53,6 @@ fig2 = px.line(
     x="Decile",
     y="Life Expectancy",
     color="Gender",
-    title="Life expectancy at birth by deprivation decile in England (2018–2020)",
     markers=True,
     color_discrete_map={
         "Male Life Expectancy": "#1f77b4",
@@ -61,8 +60,7 @@ fig2 = px.line(
     }
 )
 
-fig2.update_layout(title_x=0.2,
-                   yaxis_title="Life Expectancy (years)",
+fig2.update_layout(yaxis_title="Life Expectancy (years)",
                    xaxis_title="Deprivation decile")
 
 st.plotly_chart(fig2, use_container_width=True)
