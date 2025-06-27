@@ -89,7 +89,7 @@ st.markdown(
             padding-bottom: 50px; /* Creates space at the bottom so content doesn't hide behind footer */
         }
     </style>
-    <div class="footer">By Luqa Ismail-Keyes</div>
+    <div class="footer">By Luqa I-K</div>
     """,
     unsafe_allow_html=True
 )
