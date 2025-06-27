@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(page_title="Life Expectancy Dashboard", layout="centered")
 
 st.title("A Visual Exploration of Inequality")
-st.markdown("How Gini coefficient, life expectancy and more range internationally and within deciles of a population.")
+st.markdown("How Gini coefficient, life expectancy and more range internationally and within deciles of a population. This will highlight the extreme levels of inequality prevalant within the world as we know it.")
 
 ### --- Chart 1: Gini Coefficient Bar Chart --- ###
 st.subheader("Mortality inequality Gini Coefficients by Country (2002)")
