@@ -64,7 +64,9 @@ fig2 = px.line(
 )
 
 fig2.update_layout(yaxis_title="Life Expectancy (years)",
-                   xaxis_title="Deprivation decile")
+                   xaxis_title="Deprivation decile",
+                      margin=dict(t=10)  # Reduce top margin
+)
 
 st.plotly_chart(fig2, use_container_width=True)
 
