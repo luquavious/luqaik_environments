@@ -32,7 +32,7 @@ fig1.update_layout(
     xaxis_title="",
     uniformtext_minsize=8,
     uniformtext_mode='hide',
-    margin=dict(t=20)  # Reduce top margin
+    margin=dict(t=10)  # Reduce top margin
 )
 
 st.plotly_chart(fig1, use_container_width=True)
