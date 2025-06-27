@@ -58,7 +58,7 @@ fig2 = px.line(
     color="Gender",
     markers=True,
     color_discrete_map={
-        "Male Life Expectancy": "#ff7f0e",
+        "Male Life Expectancy": "#1f77b4",
         "Female Life Expectancy": "#ff7f0e" 
     }
 )
